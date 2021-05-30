@@ -16,9 +16,11 @@ $ sudo nano /etc/mosquitto/mosquitto.conf
 ```bash
 # default listener
 port 1883
+
 # additional listener for websockets
 listener 9001
 protocol websockets
+
 allow_anonymous false
 password_file /etc/mosquitto/passwd
 ```
